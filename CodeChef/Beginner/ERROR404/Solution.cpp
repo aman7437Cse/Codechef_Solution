@@ -1,0 +1,1 @@
+// Solution for ERROR404 on CodeChef
