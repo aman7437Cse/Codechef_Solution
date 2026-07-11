@@ -1,0 +1,1 @@
+// Solution for DETSCORE on CodeChef
