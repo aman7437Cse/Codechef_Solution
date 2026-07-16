@@ -1,0 +1,1 @@
+// Solution for MINHEIGHT on CodeChef
