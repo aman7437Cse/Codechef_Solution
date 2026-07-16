@@ -1,0 +1,1 @@
+// Solution for RIP2000 on CodeChef
