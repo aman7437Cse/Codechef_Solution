@@ -1,0 +1,1 @@
+// Solution for SIXFRIENDS on CodeChef
