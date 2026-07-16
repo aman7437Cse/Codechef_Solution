@@ -1,0 +1,1 @@
+// Solution for MINCOINSREQ on CodeChef
