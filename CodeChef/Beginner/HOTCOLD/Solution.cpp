@@ -1,0 +1,1 @@
+// Solution for HOTCOLD on CodeChef
