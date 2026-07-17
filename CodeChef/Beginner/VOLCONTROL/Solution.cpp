@@ -1,0 +1,1 @@
+// Solution for VOLCONTROL on CodeChef
