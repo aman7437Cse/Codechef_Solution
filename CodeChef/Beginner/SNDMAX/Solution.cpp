@@ -1,0 +1,1 @@
+// Solution for SNDMAX on CodeChef
