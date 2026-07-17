@@ -1,0 +1,1 @@
+// Solution for ALTARR on CodeChef
