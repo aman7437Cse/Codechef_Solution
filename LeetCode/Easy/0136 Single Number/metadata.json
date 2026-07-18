@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int singleNumber(vector<int>& nums) {\n        int ans=0;\n        for(int val : nums){\n            ans=ans^val;\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Single Number",
+  "problemNumber": "136",
+  "submissionDate": "2026-07-18T06:04:39.021Z",
+  "submissionUrl": "https://leetcode.com/problems/single-number/submissions/2071832266/"
+}
