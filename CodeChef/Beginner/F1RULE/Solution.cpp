@@ -1,0 +1,1 @@
+// Solution for F1RULE on CodeChef
