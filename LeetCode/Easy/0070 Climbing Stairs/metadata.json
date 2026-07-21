@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int climbStairs(int n) {\n        return n;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Climbing Stairs",
+  "problemNumber": "70",
+  "submissionDate": "2026-07-21T13:13:11.928Z",
+  "submissionUrl": "https://leetcode.com/problems/climbing-stairs/description/?envType=problem-list-v2&envId=math"
+}
