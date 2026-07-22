@@ -1,0 +1,1 @@
+// Solution for INCRIQ on CodeChef
