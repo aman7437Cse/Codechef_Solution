@@ -1,0 +1,1 @@
+// Solution for MANIPULATE on CodeChef
