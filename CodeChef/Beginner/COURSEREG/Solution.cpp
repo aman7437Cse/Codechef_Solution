@@ -1,0 +1,1 @@
+// Solution for COURSEREG on CodeChef
