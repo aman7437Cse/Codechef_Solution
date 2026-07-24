@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n\n    bool isAlphaNum(char ch){\n        if((ch>='0'&&ch<='9')||(tolower(ch)>='a'&&tolower(ch)<='z')){\n            return true;\n        }\n        return false;\n    }\n    bool isPalindrome(string s) {\n        int st=0,end=s.length()-1;\n        while(st<=end){\n            if(!isAlphaNum(s[st])){\n                st++;\n                continue;\n            }\n            if(!isAlphaNum(s[end])){\n                end--;\n                continue;\n            }\n            if(tolower(s[st])!=tolower(s[end])){\n            return false;\n            }\n            st++;\n            end--;\n        }\n        return true;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Valid Palindrome",
+  "problemNumber": "125",
+  "submissionDate": "2026-07-24T10:29:04.201Z",
+  "submissionUrl": "https://leetcode.com/problems/valid-palindrome/submissions/2079452377/"
+}
