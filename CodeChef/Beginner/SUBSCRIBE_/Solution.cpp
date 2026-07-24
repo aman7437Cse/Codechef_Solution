@@ -1,0 +1,1 @@
+// Solution for SUBSCRIBE_ on CodeChef
