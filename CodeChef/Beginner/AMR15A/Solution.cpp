@@ -1,0 +1,1 @@
+// Solution for AMR15A on CodeChef
