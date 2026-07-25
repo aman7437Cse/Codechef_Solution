@@ -1,0 +1,1 @@
+// Solution for MONOPOLY2 on CodeChef
