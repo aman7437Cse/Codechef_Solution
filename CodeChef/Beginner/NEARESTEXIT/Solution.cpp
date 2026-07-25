@@ -1,0 +1,1 @@
+// Solution for NEARESTEXIT on CodeChef
