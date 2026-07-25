@@ -1,0 +1,1 @@
+// Solution for LPYAS10 on CodeChef
