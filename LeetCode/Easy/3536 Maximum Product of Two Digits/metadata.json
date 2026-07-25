@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int maxProduct(int n) {\n        \n            int m1=0;\n            int m2=0;\n            while(n>0){\n                int d=n%10;\n                if(d>=m1){\n                    m2=m1;\n                    m1=d;\n                }\n                else if(d>m2){\n                    m2=d;\n\n                }\n                n=n/10;\n            }\n            int a=m1*m2;\n            return a;\n            \n\n        \n\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Maximum Product of Two Digits",
+  "problemNumber": "3536",
+  "submissionDate": "2026-07-25T17:56:07.398Z",
+  "submissionUrl": "https://leetcode.com/problems/maximum-product-of-two-digits/submissions/2081085273/"
+}
