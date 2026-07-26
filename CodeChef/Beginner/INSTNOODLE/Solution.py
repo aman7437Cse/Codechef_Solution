@@ -1,0 +1,1 @@
+// Solution for INSTNOODLE on CodeChef
