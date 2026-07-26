@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool isValid(string s) {\n        stack<char> a;\n        for(char ch:s){\n            if(ch=='(' ||ch=='{' || ch=='['){\n                a.push(ch);\n            }\n            else{\n                if(a.empty())\n                return false;\n\n                if((ch==')' && a.top()!='(') || (ch=='}' && a.top()!='{') || (ch==']' && a.top()!='[')){\n                    return false;\n                }\n                else{\n                    a.pop();\n                }\n\n            }\n        }\n        return a.empty();\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Valid Parentheses",
+  "problemNumber": "20",
+  "submissionDate": "2026-07-26T04:46:07.571Z",
+  "submissionUrl": "https://leetcode.com/problems/valid-parentheses/"
+}
