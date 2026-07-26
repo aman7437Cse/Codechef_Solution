@@ -1,0 +1,1 @@
+// Solution for WATERCOOLER2 on CodeChef
