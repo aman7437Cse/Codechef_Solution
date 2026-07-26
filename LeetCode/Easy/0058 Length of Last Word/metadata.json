@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int lengthOfLastWord(string s) {\n        int len=0;\n        int i= s.size()-1;\n        while(i>=0 && s[i]==' '){\n            i--;\n        }\n        while(i>=0 && s[i]!=' '){\n            len++;\n            i--;\n        }\n        return len;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Length of Last Word",
+  "problemNumber": "58",
+  "submissionDate": "2026-07-26T04:58:17.187Z",
+  "submissionUrl": "https://leetcode.com/problems/length-of-last-word/submissions/2081542792/"
+}
