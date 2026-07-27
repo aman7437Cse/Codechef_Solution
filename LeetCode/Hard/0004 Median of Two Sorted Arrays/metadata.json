@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {\n        vector<int> v;\n\nfor(int x : nums1)\n    v.push_back(x);\n\nfor(int x : nums2)\n    v.push_back(x);\n\nsort(v.begin(), v.end());\n\nint n = v.size();\n\nif(n % 2 == 1)\n    return v[n/2];\nelse\n    return (v[n/2 - 1] + v[n/2]) / 2.0;\n    }\n};",
+  "difficulty": "Hard",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Median of Two Sorted Arrays",
+  "problemNumber": "4",
+  "submissionDate": "2026-07-27T18:38:10.139Z",
+  "submissionUrl": "https://leetcode.com/problems/median-of-two-sorted-arrays/description/"
+}
