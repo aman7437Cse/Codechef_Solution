@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool containsDuplicate(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        for(int i=0;i<nums.size()-1;i++){\n            if(nums[i]==nums[i+1]){\n                return true;\n            }\n            \n            \n        }\n        return false;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Contains Duplicate",
+  "problemNumber": "217",
+  "submissionDate": "2026-07-27T19:10:13.511Z",
+  "submissionUrl": "https://leetcode.com/problems/contains-duplicate/submissions/2083871913/?envType=problem-list-v2&envId=array"
+}
