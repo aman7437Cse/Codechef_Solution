@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int maximumProduct(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        int n=nums.size();\n        int o1=nums[n-1]*nums[n-2]*nums[n-3];\n        int o2=nums[0]*nums[1]*nums[n-1];\n\n        return max(o1,o2);\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Maximum Product of Three Numbers",
+  "problemNumber": "628",
+  "submissionDate": "2026-07-27T11:54:09.072Z",
+  "submissionUrl": "https://leetcode.com/problems/maximum-product-of-three-numbers/submissions/2083299192/"
+}
