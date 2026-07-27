@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int majorityElement(vector<int>& nums) {\n        sort(nums.begin(), nums.end());\n        int n = nums.size();\n        return nums[n / 2];\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Majority Element",
+  "problemNumber": "169",
+  "submissionDate": "2026-07-27T17:27:03.882Z",
+  "submissionUrl": "https://leetcode.com/problems/majority-element/description/?envType=problem-list-v2&envId=sorting"
+}
