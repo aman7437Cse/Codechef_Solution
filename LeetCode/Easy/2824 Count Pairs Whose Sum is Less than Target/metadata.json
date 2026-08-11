@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countPairs(vector<int>& nums, int target) {\n        int count=0;\n        for(int i=0;i<nums.size();i++){\n            for(int j=i+1;j<nums.size();j++){\n                if(nums[i]+nums[j]<target){\n                    count++;\n                }\n\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count Pairs Whose Sum is Less than Target",
+  "problemNumber": "2824",
+  "submissionDate": "2026-08-11T18:58:20.253Z",
+  "submissionUrl": "https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/submissions/2103348062/"
+}
