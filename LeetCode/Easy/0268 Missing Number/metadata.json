@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int missingNumber(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        for(int i=0;i<nums.size();i++){\n            if(nums[i]!=i){\n                return i;\n            }\n        }\n        return nums.size();\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Missing Number",
+  "problemNumber": "268",
+  "submissionDate": "2026-08-11T18:49:22.617Z",
+  "submissionUrl": "https://leetcode.com/problems/missing-number/submissions/2103339165/"
+}
