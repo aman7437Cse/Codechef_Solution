@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool checkPerfectNumber(int num) {\n        int sum=0;\n        for(int i=1;i<num;i++){\n            if(num%i==0)\n                sum=sum+i;\n            \n        }\n\n        return num==sum;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Perfect Number",
+  "problemNumber": "507",
+  "submissionDate": "2026-08-11T19:15:27.429Z",
+  "submissionUrl": "https://leetcode.com/problems/perfect-number/submissions/2103365079/"
+}
