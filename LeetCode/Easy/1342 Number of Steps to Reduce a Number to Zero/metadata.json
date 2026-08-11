@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int numberOfSteps(int num) {\n        int count=0;\n        int sum=0;\n        while(num>0){\n            while(num%2==0){\n                count++;\n                num=num/2;\n            }\n            while(num%2!=0){\n                sum++;\n                num=num-1;\n            }\n        }\n        return count+sum;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Number of Steps to Reduce a Number to Zero",
+  "problemNumber": "1342",
+  "submissionDate": "2026-08-11T18:51:34.991Z",
+  "submissionUrl": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/submissions/2103341516/"
+}
