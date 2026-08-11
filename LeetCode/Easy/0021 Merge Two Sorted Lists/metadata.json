@@ -1,0 +1,10 @@
+{
+  "code": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {\n        vector<int> v;\n        while(list1!=NULL){\n            v.push_back(list1->val);\n            list1=list1->next;\n \n        }\n        while(list2!=NULL){\n            v.push_back(list2->val);\n            list2=list2->next;\n        }\n        sort(v.begin(),v.end());\n\n        ListNode* head = NULL;\n        ListNode* tail = NULL;\n\n        for(int x : v) {\n\n            ListNode* newNode = new ListNode(x);\n\n            if(head == NULL) {\n                head = newNode;\n                tail = newNode;\n            }\n            else {\n                tail->next = newNode;\n                tail = newNode;\n            }\n        }\n\n        return head;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Merge Two Sorted Lists",
+  "problemNumber": "21",
+  "submissionDate": "2026-08-11T09:38:02.808Z",
+  "submissionUrl": "https://leetcode.com/problems/merge-two-sorted-lists/submissions/2102632857/"
+}
