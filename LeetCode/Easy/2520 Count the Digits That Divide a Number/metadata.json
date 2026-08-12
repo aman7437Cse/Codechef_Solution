@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countDigits(int num) {\n        int n=num;\n        int count=0;\n        while(n>0){\n            int digit=n%10;\n            if(num%digit==0){\n                count++;\n\n            }\n            n=n/10;\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count the Digits That Divide a Number",
+  "problemNumber": "2520",
+  "submissionDate": "2026-08-12T09:28:30.626Z",
+  "submissionUrl": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/submissions/2103981823/?envType=problem-list-v2&envId=math"
+}
