@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    vector<int> findDisappearedNumbers(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        vector <int> ans;\n        unordered_set<int> s;\n\n        for(int x:nums){\n            s.in\n        }\n        \n        for(int i=1;i<=nums.size();i++){\n            if(find(nums.begin(),nums.end(),i)==nums.end()){\n                ans.push_back(i);\n            }\n\n        }\n        return ans;\n    }\n};",
+  "code": "class Solution {\npublic:\n    vector<int> findDisappearedNumbers(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        vector <int> ans;\n        unordered_set<int> s;\n\n        for(int x:nums){\n            s.insert(x);\n        }\n        \n        for(int i=1;i<=nums.size();i++){\n            if(s.find(i)==s.end()){\n                ans.push_back(i);\n            }\n\n        }\n        return ans;\n    }\n};",
   "difficulty": "Easy",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Find All Numbers Disappeared in an Array",
   "problemNumber": "448",
-  "submissionDate": "2026-08-12T12:55:43.651Z",
+  "submissionDate": "2026-08-12T12:56:44.315Z",
   "submissionUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/?envType=problem-list-v2&envId=hash-table"
 }

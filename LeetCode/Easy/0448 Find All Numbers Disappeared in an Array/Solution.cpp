@@ -6,11 +6,11 @@ public:
         unordered_set<int> s;
 
         for(int x:nums){
-            s.in
+            s.insert(x);
         }
         
         for(int i=1;i<=nums.size();i++){
-            if(find(nums.begin(),nums.end(),i)==nums.end()){
+            if(s.find(i)==s.end()){
                 ans.push_back(i);
             }
 
