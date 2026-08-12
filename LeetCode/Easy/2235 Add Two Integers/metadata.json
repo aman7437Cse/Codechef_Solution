@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int sum(int num1, int num2) {\n        return num1+num2;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Add Two Integers",
+  "problemNumber": "2235",
+  "submissionDate": "2026-08-12T05:38:12.506Z",
+  "submissionUrl": "https://leetcode.com/problems/add-two-integers/submissions/2103728313/?envType=problem-list-v2&envId=math"
+}
