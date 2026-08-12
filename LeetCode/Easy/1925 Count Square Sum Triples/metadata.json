@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countTriples(int n) {\n        int count=0;\n        for(int a=1;a<=n;a++){\n            for(int b=1;b<=n;b++){\n                for(int c=1;c<=n;c++){\n                    if(a*a+b*b==c*c){\n                        count++;\n                    }\n\n                }\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count Square Sum Triples",
+  "problemNumber": "1925",
+  "submissionDate": "2026-08-12T05:33:31.257Z",
+  "submissionUrl": "https://leetcode.com/problems/count-square-sum-triples/?envType=problem-list-v2&envId=math"
+}
