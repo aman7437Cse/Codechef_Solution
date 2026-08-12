@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<double> convertTemperature(double celsius) {\n        double kelvin = celsius + 273.15;\n        double fahrenheit = celsius * 1.80 + 32.00;\n\n        return {kelvin,fahrenheit};\n\n    }\n    \n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Convert the Temperature",
+  "problemNumber": "2469",
+  "submissionDate": "2026-08-12T05:57:17.268Z",
+  "submissionUrl": "https://leetcode.com/problems/convert-the-temperature/submissions/2103751685/?envType=problem-list-v2&envId=math"
+}
