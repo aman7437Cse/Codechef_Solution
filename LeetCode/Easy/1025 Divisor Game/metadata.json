@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool divisorGame(int n) {\n        if(n%2==0){\n            return true;\n        }\n        return false;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Divisor Game",
+  "problemNumber": "1025",
+  "submissionDate": "2026-08-12T05:03:06.868Z",
+  "submissionUrl": "https://leetcode.com/problems/divisor-game/description/?envType=problem-list-v2&envId=math"
+}
