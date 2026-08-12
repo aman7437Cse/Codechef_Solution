@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int findGCD(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        int max=nums[nums.size()-1];\n        int min=nums[0];\n        for(int i=min;i>=1;i--){\n            if(max%i==0 && min%i==0){\n                return i;\n            }\n        }\n        return 1;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Find Greatest Common Divisor of Array",
+  "problemNumber": "1979",
+  "submissionDate": "2026-08-12T08:01:39.250Z",
+  "submissionUrl": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/submissions/2103890635/?envType=problem-list-v2&envId=math"
+}
