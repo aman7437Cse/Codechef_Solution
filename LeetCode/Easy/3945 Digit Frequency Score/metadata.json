@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int digitFrequencyScore(int n) {\n        int count=0;\n        while(n>0){\n            int d=n%10;\n            count=count+d;\n            n=n/10;\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Digit Frequency Score",
+  "problemNumber": "3945",
+  "submissionDate": "2026-08-12T07:25:23.419Z",
+  "submissionUrl": "https://leetcode.com/problems/digit-frequency-score/submissions/2103859385/?envType=problem-list-v2&envId=math"
+}
