@@ -12,7 +12,7 @@ public:
         }
         n=n/10;
         }
-        ilong longnt x=0;
+        long long int x=0;
 
         for(int i=v.size()-1;i>=0;i--){
             x=x*10+v[i];
