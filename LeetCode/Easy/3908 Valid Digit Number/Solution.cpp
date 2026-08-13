@@ -7,6 +7,10 @@ public:
             v.push_back(d);
             n=n/10;
         }
+         if(v.empty())
+            return false;
+
+            
         if(v.back()==x){
             return false;
         }

@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    bool validDigit(int n, int x) {\n        vector<int> v;\n        while(n>0){\n            int d=n%10;\n            v.push_back(d);\n            n=n/10;\n        }\n        if(v.back()==x){\n            return false;\n        }\n        for(int i=0;i<v.size();i++){\n            if(v[i]==x){\n                return true;\n            }\n        }\n           return false;\n    }\n};",
+  "code": "class Solution {\npublic:\n    bool validDigit(int n, int x) {\n        vector<int> v;\n        while(n>0){\n            int d=n%10;\n            v.push_back(d);\n            n=n/10;\n        }\n         if(v.empty())\n            return false;\n\n            \n        if(v.back()==x){\n            return false;\n        }\n        for(int i=0;i<v.size();i++){\n            if(v[i]==x){\n                return true;\n            }\n        }\n           return false;\n    }\n};",
   "difficulty": "Easy",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Valid Digit Number",
   "problemNumber": "3908",
-  "submissionDate": "2026-08-13T18:14:32.399Z",
-  "submissionUrl": "https://leetcode.com/problems/valid-digit-number/submissions/2105826810/?envType=problem-list-v2&envId=math"
+  "submissionDate": "2026-08-13T18:15:52.296Z",
+  "submissionUrl": "https://leetcode.com/problems/valid-digit-number/submissions/2105828687/?envType=problem-list-v2&envId=math"
 }
