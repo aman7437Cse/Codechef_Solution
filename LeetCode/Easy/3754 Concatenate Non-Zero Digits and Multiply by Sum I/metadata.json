@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    long long sumAndMultiply(int n) {\n        \n        vector<int>v;\n        int sum=0;\n        while(n>0){\n        int d=n%10;\n        sum=sum+d;\n        if(d!=0){\n        v.push_back(d);\n        }\n        n=n/10;\n        }\n        ilong longnt x=0;\n\n        for(int i=v.size()-1;i>=0;i--){\n            x=x*10+v[i];\n        }\n        return x*sum;\n\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Concatenate Non-Zero Digits and Multiply by Sum I",
+  "problemNumber": "3754",
+  "submissionDate": "2026-08-13T18:51:07.665Z",
+  "submissionUrl": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/?envType=problem-list-v2&envId=math"
+}
