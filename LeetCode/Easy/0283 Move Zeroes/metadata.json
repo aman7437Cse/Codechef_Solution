@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    void moveZeroes(vector<int>& nums) {\n        vector<int> v;\n        for(int i=0;i<nums.size();i++){\n            if(nums[i]!=0){\n                v.push_back(nums[i]);\n            }\n        }\n        while(v.size()<nums.size()){\n            v.push_back(0);\n        }\n        nums=v;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Move Zeroes",
+  "problemNumber": "283",
+  "submissionDate": "2026-08-14T13:43:25.687Z",
+  "submissionUrl": "https://leetcode.com/problems/move-zeroes/submissions/2106645824/?envType=study-plan-v2&envId=programming-skills"
+}
