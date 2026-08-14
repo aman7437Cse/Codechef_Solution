@@ -11,16 +11,6 @@ public:
                 mult=mult*-1;
             }
         }
-        
-        
-
-        }
-        else if(mult==0){
-            ans=0;
-        }
-        else{
-            ans=-1;
-        }
-        return ans;
+        return mult;
     }
 };
