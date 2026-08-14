@@ -4,10 +4,14 @@ public:
         long long int mult=1;
         int ans;
         for(int i=0;i<nums.size();i++){
-            if
-        }
-        if(mult>0){
-            ans=1;
+            if(nums[i]==0){
+                return 0;
+            }
+            if(nums[i]<0){
+                mu
+            }
+        
+        
 
         }
         else if(mult==0){
