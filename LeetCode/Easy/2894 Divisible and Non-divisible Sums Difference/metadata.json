@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int differenceOfSums(int n, int m) {\n        int sum=0;\n        int dum=0;\n       for(int i=1;i<=n;i++){\n        \n        if(i%m==0){\n            sum=sum+i;\n        }\n        else if(i%m!=0){\n            dum=dum+i;\n\n        }\n\n       } \n       return dum-sum;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Divisible and Non-divisible Sums Difference",
+  "problemNumber": "2894",
+  "submissionDate": "2026-08-14T15:02:59.709Z",
+  "submissionUrl": "https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/submissions/2106722422/?envType=problem-list-v2&envId=math"
+}
