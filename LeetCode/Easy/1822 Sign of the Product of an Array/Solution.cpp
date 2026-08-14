@@ -1,7 +1,7 @@
 class Solution {
 public:
     int arraySign(vector<int>& nums) {
-        long loint mult=1;
+        long long int mult=1;
         int ans;
         for(int i=0;i<nums.size();i++){
             mult=mult*nums[i];

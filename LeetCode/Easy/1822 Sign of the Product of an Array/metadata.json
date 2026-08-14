@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    int arraySign(vector<int>& nums) {\n        long loint mult=1;\n        int ans;\n        for(int i=0;i<nums.size();i++){\n            mult=mult*nums[i];\n        }\n        if(mult>0){\n            ans=1;\n\n        }\n        else if(mult==0){\n            ans=0;\n        }\n        else{\n            ans=-1;\n        }\n        return ans;\n    }\n};",
+  "code": "class Solution {\npublic:\n    int arraySign(vector<int>& nums) {\n        long long int mult=1;\n        int ans;\n        for(int i=0;i<nums.size();i++){\n            mult=mult*nums[i];\n        }\n        if(mult>0){\n            ans=1;\n\n        }\n        else if(mult==0){\n            ans=0;\n        }\n        else{\n            ans=-1;\n        }\n        return ans;\n    }\n};",
   "difficulty": "Easy",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Sign of the Product of an Array",
   "problemNumber": "1822",
-  "submissionDate": "2026-08-14T17:26:57.603Z",
+  "submissionDate": "2026-08-14T17:27:02.825Z",
   "submissionUrl": "https://leetcode.com/problems/sign-of-the-product-of-an-array/?envType=problem-list-v2&envId=math"
 }
