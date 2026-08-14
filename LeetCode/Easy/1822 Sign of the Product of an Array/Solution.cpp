@@ -4,7 +4,7 @@ public:
         long long int mult=1;
         int ans;
         for(int i=0;i<nums.size();i++){
-            mult=mult*nums[i];
+            if
         }
         if(mult>0){
             ans=1;
