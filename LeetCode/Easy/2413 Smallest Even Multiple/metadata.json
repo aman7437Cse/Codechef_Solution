@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int smallestEvenMultiple(int n) {\n        int ans;\n        if(n%2==0){\n            ans=n;\n        }\n        else{\n            ans=2*n;\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Smallest Even Multiple",
+  "problemNumber": "2413",
+  "submissionDate": "2026-08-14T13:52:50.680Z",
+  "submissionUrl": "https://leetcode.com/problems/smallest-even-multiple/submissions/2106654871/?envType=problem-list-v2&envId=math"
+}
