@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int sumOfMultiples(int n) {\n        int sum=0;\n        for(int i=1;i<=n;i++){\n            int t=i;\n            if(t%3==0 || t%5==0 || t%7==0 ){\n                sum=sum+t;\n            }\n        }\n        return sum;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Sum Multiples",
+  "problemNumber": "2652",
+  "submissionDate": "2026-08-14T14:42:39.780Z",
+  "submissionUrl": "https://leetcode.com/problems/sum-multiples/submissions/2106703026/?envType=problem-list-v2&envId=math"
+}
