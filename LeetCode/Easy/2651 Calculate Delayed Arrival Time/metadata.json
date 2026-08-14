@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int findDelayedArrivalTime(int arrivalTime, int delayedTime) {\n        int ans=arrivalTime+delayedTime;\n        \n        if(ans==24){\n            ans=0;\n        }\n        else{\n            ans=ans%24;\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Calculate Delayed Arrival Time",
+  "problemNumber": "2651",
+  "submissionDate": "2026-08-14T18:12:13.354Z",
+  "submissionUrl": "https://leetcode.com/problems/calculate-delayed-arrival-time/submissions/2106934376/?envType=problem-list-v2&envId=math"
+}
