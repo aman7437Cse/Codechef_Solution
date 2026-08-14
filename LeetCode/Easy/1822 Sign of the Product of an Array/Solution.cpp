@@ -8,8 +8,9 @@ public:
                 return 0;
             }
             if(nums[i]<0){
-                mu
+                mult=mult*-1;
             }
+        }
         
         
 
