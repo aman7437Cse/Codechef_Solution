@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int finalValueAfterOperations(vector<string>& operations) {\n        int count=0;\n        for (string i :operations){\n            if(i==\"--X\" || i==\"X--\"){\n                count=count-1;\n            }\n            else if(i==\"++X\" || i==\"X++\"){\n                count=count+1;\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Final Value of Variable After Performing Operations",
+  "problemNumber": "2011",
+  "submissionDate": "2026-08-15T20:48:11.871Z",
+  "submissionUrl": "https://leetcode.com/problems/final-value-of-variable-after-performing-operations/submissions/2108244067/"
+}
