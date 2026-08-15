@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n     int val(char c){\n        if(c=='I')return 1;\n        if(c=='V')return 5;\n        if(c=='X')return 10;\n        if(c=='L')return 50;\n        if(c=='C')return 100;\n        if(c=='D')return 500;\n        return 1000;\n     }\n    int romanToInt(string s) {\n        int ans=0;\n        for(int i=0;i<s.size()-1;i++){\n            if(val(s[i])<val(s[i+1])){\n                ans=ans-val(s[i]);\n            }\n            else{\n                ans=ans+val(s[i]);\n            }\n        }\n        ans=ans+val(s[s.size()-1]);\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Roman to Integer",
+  "problemNumber": "13",
+  "submissionDate": "2026-08-15T09:38:31.175Z",
+  "submissionUrl": "https://leetcode.com/problems/roman-to-integer/submissions/2107477944/"
+}
