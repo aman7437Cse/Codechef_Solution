@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> concatWithReverse(vector<int>& nums) {\n        vector<int> v;\n        vector<int> r;\n        for(int i=0;i<nums.size();i++){\n            v.push_back(nums[i]);\n        }\n        for(int j=(int)nums.size()-1;j>=0;j--){\n            r.push_back(nums[j]);\n        }\n        v.insert(v.end(), r.begin(), r.end());\n        return v;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Concatenate Array With Reverse",
+  "problemNumber": "3925",
+  "submissionDate": "2026-08-15T13:41:31.994Z",
+  "submissionUrl": "https://leetcode.com/problems/concatenate-array-with-reverse/submissions/2107703500/"
+}
