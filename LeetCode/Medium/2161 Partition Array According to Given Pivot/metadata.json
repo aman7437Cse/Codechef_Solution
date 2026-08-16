@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> pivotArray(vector<int>& nums, int pivot) {\n        vector<int> v;\n        vector<int> equal;\n        vector<int>r;\n        for(int i=0;i<nums.size();i++){\n            if(nums[i]<pivot){\n                v.push_back(nums[i]);\n            }\n            else if(nums[i]>pivot){\n                r.push_back(nums[i]);\n            }\n            else if(nums[i]==pivot){\n                equal.push_back(nums[i]);\n            }\n\n            \n\n        }\n        v.insert(v.end(),equal.begin(),equal.end());\n        v.insert(v.end(),r.begin(),r.end());\n        return v;\n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Partition Array According to Given Pivot",
+  "problemNumber": "2161",
+  "submissionDate": "2026-08-16T07:32:44.803Z",
+  "submissionUrl": "https://leetcode.com/problems/partition-array-according-to-given-pivot/submissions/2108695626/"
+}
