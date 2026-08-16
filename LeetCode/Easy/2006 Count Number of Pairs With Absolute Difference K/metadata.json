@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countKDifference(vector<int>& nums, int k) {\n        int count=0;\n        for(int i=0;i<nums.size();i++){\n            for (int j=i+1;j<nums.size();j++){\n                if(abs(nums[i]-nums[j])==k){\n                    count++;\n                }\n           }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count Number of Pairs With Absolute Difference K",
+  "problemNumber": "2006",
+  "submissionDate": "2026-08-16T18:30:37.068Z",
+  "submissionUrl": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/submissions/2109370494/"
+}
