@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countDigitOccurrences(vector<int>& nums, int digit) {\n        vector<int> v;\n        int count=0;\n        for(int i=0;i<nums.size();i++){\n            while(nums[i]>0){\n                int digit=nums[i]%10;\n                v.push_back(digit);\n                nums[i]=nums[i]/10;\n\n            }\n        }\n        for(int j=0;j<v.size();j++){\n            if(v[j]==digit){\n                count++;\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count Digit Appearances",
+  "problemNumber": "3895",
+  "submissionDate": "2026-08-16T18:24:29.032Z",
+  "submissionUrl": "https://leetcode.com/problems/count-digit-appearances/submissions/2109363072/"
+}
