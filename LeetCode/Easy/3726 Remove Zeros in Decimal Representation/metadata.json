@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    long long removeZeros(long long n) {\n        vector <int> v;\n        long long no=0;\n        while(n>0){\n            int d=n%10;\n            if(d!=0){\n                v.push_back(d);\n            }\n            n=n/10;\n        }\n        for(int i=v.size()-1;i>=0;i--){\n            no=no*10+v[i];\n        }\n        return no;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Remove Zeros in Decimal Representation",
+  "problemNumber": "3726",
+  "submissionDate": "2026-08-18T10:42:04.865Z",
+  "submissionUrl": "https://leetcode.com/problems/remove-zeros-in-decimal-representation/submissions/2111293806/"
+}
