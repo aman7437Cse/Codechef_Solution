@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int absDifference(vector<int>& nums, int k) {\n        sort(nums.begin(),nums.end());\n        int ans;\n        if(nums.size()<2){\n            return 0;\n        }\n        else{\n        int max=nums[nums.size()-1]+nums[nums.size()-2];\n        int min=nums[0]+nums[1];\n        ans=abs(max-min);\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Absolute Difference Between Maximum and Minimum K Elements",
+  "problemNumber": "3774",
+  "submissionDate": "2026-08-18T18:27:56.379Z",
+  "submissionUrl": "https://leetcode.com/problems/absolute-difference-between-maximum-and-minimum-k-elements/?envType=problem-list-v2&envId=array"
+}
