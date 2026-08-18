@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> stableMountains(vector<int>& height, int threshold) {\n        vector <int> ans;\n        for(int i=0;i<height.size()-1;i++){\n            if(height[i]>threshold)\n            ans.push_back(i+1);\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Find Indices of Stable Mountains",
+  "problemNumber": "3285",
+  "submissionDate": "2026-08-18T10:55:12.112Z",
+  "submissionUrl": "https://leetcode.com/problems/find-indices-of-stable-mountains/"
+}
