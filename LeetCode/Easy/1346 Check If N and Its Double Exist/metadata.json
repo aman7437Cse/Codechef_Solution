@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool checkIfExist(vector<int>& arr) {\n        for(int i = 0; i < arr.size(); i++) {\n            for(int j = 0; j < arr.size(); j++) {\n                if(i != j && arr[i] == 2 * arr[j]) {\n                    return true;\n                }\n            }\n        }\n\n        return false;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Check If N and Its Double Exist",
+  "problemNumber": "1346",
+  "submissionDate": "2026-08-18T15:13:09.936Z",
+  "submissionUrl": "https://leetcode.com/problems/check-if-n-and-its-double-exist/submissions/2111589409/?envType=problem-list-v2&envId=array"
+}
