@@ -4,6 +4,7 @@ public:
         for(int i=0;i<nums.size();i++){
             if(nums[i]==original){
                 original=2*original;
+                
             }
         }
         return original;
