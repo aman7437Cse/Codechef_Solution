@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int maxIceCream(vector<int>& costs, int coins) {\n        int sum=0;\n        int count=0;\n        for(int i=0;i<costs.size();i++){\n            if(sum+costs[i]<=coins){\n                sum=sum+costs[i];\n                count++;\n            }\n            else{\n                break;\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Maximum Ice Cream Bars",
+  "problemNumber": "1833",
+  "submissionDate": "2026-08-18T19:02:50.993Z",
+  "submissionUrl": "https://leetcode.com/problems/maximum-ice-cream-bars/"
+}
