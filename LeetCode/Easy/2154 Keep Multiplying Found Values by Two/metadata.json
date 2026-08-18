@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int findFinalValue(vector<int>& nums, int original) {\n        for(int i=0;i<nums.size();i++){\n            if(nums[i]==original){\n                original=2*original;\n            }\n        }\n        return original;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Keep Multiplying Found Values by Two",
+  "problemNumber": "2154",
+  "submissionDate": "2026-08-18T15:22:01.706Z",
+  "submissionUrl": "https://leetcode.com/problems/keep-multiplying-found-values-by-two/?envType=problem-list-v2&envId=array"
+}
