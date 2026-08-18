@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int thirdMax(vector<int>& nums) {\n        sort(nums.begin(),nums.end());\n        nums.erase(unique(nums.begin(),nums.end()),nums.end());\n        if(nums.size()<3){\n            return nums[nums.size()-1];\n        }\n        return nums[nums.size()-3];\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Third Maximum Number",
+  "problemNumber": "414",
+  "submissionDate": "2026-08-18T15:03:20.863Z",
+  "submissionUrl": "https://leetcode.com/problems/third-maximum-number/?envType=problem-list-v2&envId=array"
+}
