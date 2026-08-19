@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    string removeStars(string s) {\n        stack <char> st;\n        for(char ch:s){\n            if(ch == '*'){\n                st.pop();\n            }\n            else{\n                st.push(ch);\n            }\n        }\n        string ans=\"\";\n        while(!st.empty()){\n            ans+=st.top();\n            st.pop();\n        }\n        reverse(ans.begin(),ans.end());\n        return ans;\n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Removing Stars From a String",
+  "problemNumber": "2390",
+  "submissionDate": "2026-08-19T17:46:31.862Z",
+  "submissionUrl": "https://leetcode.com/problems/removing-stars-from-a-string/submissions/2113058188/"
+}
