@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int findLucky(vector<int>& arr) {\n        map<int,int> mp;\n        for(int x:arr){\n            mp[x]++;\n        }\n        int ans=-1;\n        for(auto p:mp){\n            if(p.first==p.second){\n                ans=p.first;\n            }\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Find Lucky Integer in an Array",
+  "problemNumber": "1394",
+  "submissionDate": "2026-08-19T18:06:58.166Z",
+  "submissionUrl": "https://leetcode.com/problems/find-lucky-integer-in-an-array/submissions/2113088429/"
+}
