@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> getNoZeroIntegers(int n) {\n        vector <int> v;\n        int j=1;\n        for(int i=1;i<n;i++){\n            \n                if(i+j==n){\n                    v.push_back(i);\n                    v.push_back(j);\n                    j++;\n                }\n            \n        }\n        return v;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Convert Integer to the Sum of Two No-Zero Integers",
+  "problemNumber": "1317",
+  "submissionDate": "2026-08-22T16:19:58.328Z",
+  "submissionUrl": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/submissions/2116353901/?envType=problem-list-v2&envId=math"
+}
