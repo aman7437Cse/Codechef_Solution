@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> targetIndices(vector<int>& nums, int target) {\n        vector <int> a;\n        sort(nums.begin(),nums.end());\n        for(int i=0;i<nums.size();i++){\n            if(nums[i]==target){\n                a.push_back(i);\n            }\n        }\n        return a;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Find Target Indices After Sorting Array",
+  "problemNumber": "2089",
+  "submissionDate": "2026-08-22T14:08:04.025Z",
+  "submissionUrl": "https://leetcode.com/problems/find-target-indices-after-sorting-array/submissions/2116215631/"
+}
