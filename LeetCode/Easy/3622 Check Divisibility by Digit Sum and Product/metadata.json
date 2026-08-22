@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool checkDivisibility(int n) {\n        int sum=0;\n        int mul=1;\n        int temp=n;\n        \n        while(temp>0){\n            int d=temp%10;\n            sum=sum+d;\n            mul=mul*d;\n            temp=temp/10;\n\n        }\n        int a=sum+mul;\n        \n            return n%a==0;\n        \n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Check Divisibility by Digit Sum and Product",
+  "problemNumber": "3622",
+  "submissionDate": "2026-08-22T14:34:25.613Z",
+  "submissionUrl": "https://leetcode.com/problems/check-divisibility-by-digit-sum-and-product/submissions/2116244409/"
+}
