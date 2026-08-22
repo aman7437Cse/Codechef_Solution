@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int minOperations(vector<int>& nums, int k) {\n        int count=0;\n        int sum=0;\n        int ans;\n        for(int i=0;i<nums.size();i++){\n            int digit=nums[i]%10;\n            sum+=digit;\n            nums[i]=nums[i]/10;\n\n        }\n        \n        else{\n            while((sum%k)!=0){\n                sum=sum-1;\n                count++;\n\n            }\n            ans=count;\n        }\n        return ans;\n    \n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Minimum Operations to Make Array Sum Divisible by K",
+  "problemNumber": "3512",
+  "submissionDate": "2026-08-22T17:37:42.562Z",
+  "submissionUrl": "https://leetcode.com/problems/minimum-operations-to-make-array-sum-divisible-by-k/?envType=problem-list-v2&envId=math"
+}
