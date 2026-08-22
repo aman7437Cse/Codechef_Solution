@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int commonFactors(int a, int b) {\n        int count=0;\n        for(int i=1;i<=min(a,b);i++){\n            if(a%i==0 && b%i==0){\n                count++;\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Number of Common Factors",
+  "problemNumber": "2427",
+  "submissionDate": "2026-08-22T20:11:12.860Z",
+  "submissionUrl": "https://leetcode.com/problems/number-of-common-factors/submissions/2116594088/?envType=problem-list-v2&envId=math"
+}
