@@ -4,6 +4,7 @@ public:
         int sum=0;
         
         for(int i=0;i<nums.size();i++){
+            int count=0;
         while(nums[i]>0){
             int d=nums[i]%10;
             count++;
