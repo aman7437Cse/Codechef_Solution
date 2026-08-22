@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int smallestIndex(vector<int>& nums) {\n\n        for(int i = 0; i < nums.size(); i++) {\n            int n = nums[i];\n            int sum = 0;\n\n            while(n > 0) {\n                sum += n % 10;\n                n /= 10;\n            }\n\n            if(sum == i)\n                return i;\n        }\n\n        return -1;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Smallest Index With Digit Sum Equal to Index",
+  "problemNumber": "3550",
+  "submissionDate": "2026-08-22T18:10:08.808Z",
+  "submissionUrl": "https://leetcode.com/problems/smallest-index-with-digit-sum-equal-to-index/submissions/2116489456/?envType=problem-list-v2&envId=math"
+}
