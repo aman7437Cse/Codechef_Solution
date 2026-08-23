@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int fact(int n){\n        if(n==1 || n==0){\n            return 1;\n        }\n        return n*fact(n-1);\n    }\n    int trailingZeroes(int n) {\n        vector <int> v;\n        int count=0;\n        int a=fact(n);\n        while(a>0){\n            int digit=a%10;\n            v.push_back(digit);\n            a=a/10;\n\n        }\n        for(int j=0;j<v.size();j++){\n            if(v[j]==0){\n                count++;\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Factorial Trailing Zeroes",
+  "problemNumber": "172",
+  "submissionDate": "2026-08-23T13:02:11.100Z",
+  "submissionUrl": "https://leetcode.com/problems/factorial-trailing-zeroes/submissions/2117355490/"
+}
