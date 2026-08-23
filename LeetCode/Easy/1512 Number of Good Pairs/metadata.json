@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int numIdenticalPairs(vector<int>& nums) {\n        int count=0;\n        for(int i=0;i<nums.size();i++){\n            for(int j=i+1;j<nums.size();j++){\n                if(nums[i]==nums[j]){\n                    count++;\n                }\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Number of Good Pairs",
+  "problemNumber": "1512",
+  "submissionDate": "2026-08-23T17:37:12.197Z",
+  "submissionUrl": "https://leetcode.com/problems/number-of-good-pairs/submissions/2117650140/"
+}
