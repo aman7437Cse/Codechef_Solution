@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    int trailingZeroes(int n) {\n        \n    }\n};",
+  "code": "class Solution {\npublic:\n    int trailingZeroes(int n) {\n        int count=0;\n        while(n>0){\n            n=n/5;\n            count=count+n;\n            \n        }\n    }\n};",
   "difficulty": "Medium",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Factorial Trailing Zeroes",
   "problemNumber": "172",
-  "submissionDate": "2026-08-23T14:05:20.980Z",
+  "submissionDate": "2026-08-23T14:07:18.157Z",
   "submissionUrl": "https://leetcode.com/problems/factorial-trailing-zeroes/"
 }
