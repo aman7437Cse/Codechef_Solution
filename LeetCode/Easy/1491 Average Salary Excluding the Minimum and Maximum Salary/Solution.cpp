@@ -7,7 +7,7 @@ public:
             sum=sum+salary[i];
         }
         int up=sum-salary[0]-salary[salary.size()-1];
-        int avg=up/(salary.size()-2);
+        double avg=(double)up/(salary.size()-2);
         return avg;
     }
 };
