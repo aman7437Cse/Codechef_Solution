@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    double trimMean(vector<int>& arr) {\n       sort(arr.begin(),arr.end());\n        int sum=0;\n        int remove=arr.size()*0.05;\n        for(int i=remove;i<arr.size()-remove;i++){\n            sum=sum+arr[i];\n        }\n        \n        double avg=(double)sum/(arr.size()-2*remove);\n        return avg; \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Mean of Array After Removing Some Elements",
+  "problemNumber": "1619",
+  "submissionDate": "2026-08-26T07:51:55.478Z",
+  "submissionUrl": "https://leetcode.com/problems/mean-of-array-after-removing-some-elements/submissions/2120544136/?envType=problem-list-v2&envId=array"
+}
