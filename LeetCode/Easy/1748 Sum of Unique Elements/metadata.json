@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int sumOfUnique(vector<int>& nums) {\n        unordered_map<int,int> mp;\n        for(int a:nums){\n            mp[a]++;\n        }\n        vector<int> v;\n        for(int a:nums){\n            if(mp[a]==1){\n                v.push_back(a);\n            }\n        }\n        int sum=0;\n        for(int i=0;i<v.size();i++){\n            sum+=v[i];\n        }\n        return sum;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Sum of Unique Elements",
+  "problemNumber": "1748",
+  "submissionDate": "2026-08-26T06:07:22.929Z",
+  "submissionUrl": "https://leetcode.com/problems/sum-of-unique-elements/submissions/2120439343/?envType=problem-list-v2&envId=array"
+}
