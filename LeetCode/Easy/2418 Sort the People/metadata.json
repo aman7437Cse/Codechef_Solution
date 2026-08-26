@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<string> sortPeople(vector<string>& names, vector<int>& heights) {\n        vector <pair<int,string>> v;\n        for(int i=0;i<names.size();i++){\n            v.push_back({heights[i],names[i]});\n        }\n        sort(v.rbegin(),v.rend());\n        vector<string> ans;\n        for(auto a:v){\n            ans.push_back(a.second);\n\n        }\n        return ans;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Sort the People",
+  "problemNumber": "2418",
+  "submissionDate": "2026-08-26T07:41:48.457Z",
+  "submissionUrl": "https://leetcode.com/problems/sort-the-people/submissions/2120535438/?envType=problem-list-v2&envId=array"
+}
