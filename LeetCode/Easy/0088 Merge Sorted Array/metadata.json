@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {\n        vector <int> v;\n        for(int i=0;i<m;i++){\n            v.push_back(nums1[i]);\n        }\n        for(int j=0;j<n;j++){\n            v.push_back(nums2[j]);\n        }\n        sort(v.begin(),v.end());\n        for(int a=0;a<m+n;a++){\n        nums1[a]=v[a];\n        }\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Merge Sorted Array",
+  "problemNumber": "88",
+  "submissionDate": "2026-08-26T07:28:23.333Z",
+  "submissionUrl": "https://leetcode.com/problems/merge-sorted-array/submissions/2120523222/?envType=problem-list-v2&envId=array"
+}
