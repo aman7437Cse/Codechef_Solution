@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    bool isPalindrome(int x) {\n        long long rev=0;\n        int o=x;\n        if(x < 0)\n            return false;\n        while(x>0){\n         rev=rev*10+x%10;\n        x=x/10;\n        }\n        if(o==rev){\n        return true;}\n        else{\n        return false;}\n    }\n};",
+  "code": "class Solution {\npublic:\n    bool isPalindrome(int x) {\n        long long rev=0;\n        int o=x;\n        if(x < 0)\n            return false;\n        while(x>0){\n         rev=rev*10+x%10;\n        x=x/10;\n        }\n        \n        return o==rev;\n        \n    }\n};",
   "difficulty": "Easy",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Palindrome Number",
   "problemNumber": "9",
-  "submissionDate": "2026-07-27T19:04:24.016Z",
-  "submissionUrl": "https://leetcode.com/problems/palindrome-number/"
+  "submissionDate": "2026-08-30T05:27:39.115Z",
+  "submissionUrl": "https://leetcode.com/problems/palindrome-number/submissions/2124661425/"
 }
