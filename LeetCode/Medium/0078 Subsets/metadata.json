@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<vector<int>> subsets(vector<int>& nums) {\n        vector <int> x;\n        \n        \n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Subsets",
+  "problemNumber": "78",
+  "submissionDate": "2026-09-01T03:52:24.832Z",
+  "submissionUrl": "https://leetcode.com/problems/subsets/submissions/899975210/"
+}
