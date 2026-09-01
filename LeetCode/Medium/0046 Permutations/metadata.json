@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\n    private:\n    void getper(vector<int>&nums,int index,vector<vector<int>>&ans){\n        if(index==nums.size()){\n            ans.push_back(nums);\n            return;\n        }\n        for(int i=index;i<nums.size();i++){\n            swap(nums[index],nums[i]);\n            getper(nums,index+1,ans);\n            swap(nums[index],nums[i]);\n        }\n    }\npublic:\n\n    vector<vector<int>> permute(vector<int>& nums) {\n        vector<vector<int>> ans;\n        getper(nums,0,ans);\n        return ans;\n        \n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Permutations",
+  "problemNumber": "46",
+  "submissionDate": "2026-09-01T10:07:47.394Z",
+  "submissionUrl": "https://leetcode.com/problems/permutations/"
+}
