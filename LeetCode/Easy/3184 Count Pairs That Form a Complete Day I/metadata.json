@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countCompleteDayPairs(vector<int>& hours) {\n        int count=0;\n        for(int i=0;i<hours.size();i++){\n            for(int j=i+1;j<hours.size();j++){\n                if((hours[i]+hours[j])%24==0){\n                    count++;\n                }\n            }\n        }\n        return count;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count Pairs That Form a Complete Day I",
+  "problemNumber": "3184",
+  "submissionDate": "2026-09-01T09:51:37.533Z",
+  "submissionUrl": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-i/submissions/2127067776/?envType=problem-list-v2&envId=array"
+}
