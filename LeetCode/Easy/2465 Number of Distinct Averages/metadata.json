@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int distinctAverages(vector<int>& nums) {\n        vector<double> v;\n        sort(nums.begin(),nums.end());\n\n\n        int s=0;\n        int l=nums.size()-1;\n        while(l>=s){\n            double avg=(nums[l]+nums[s])/2.0;\n            v.push_back(avg);\n            s++;\n            l--;\n\n        }\n        v.erase(unique(v.begin(),v.end()),v.end());\n        \n        return v.size();\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Number of Distinct Averages",
+  "problemNumber": "2465",
+  "submissionDate": "2026-09-01T10:50:21.056Z",
+  "submissionUrl": "https://leetcode.com/problems/number-of-distinct-averages/?envType=problem-list-v2&envId=array"
+}
