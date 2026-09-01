@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> runningSum(vector<int>& nums) {\n        for(int i=1;i<nums.size();i++){\n            nums[i]=nums[i]+nums[i-1];\n        }\n        return nums;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Running Sum of 1d Array",
+  "problemNumber": "1480",
+  "submissionDate": "2026-09-01T13:16:56.816Z",
+  "submissionUrl": "https://leetcode.com/problems/running-sum-of-1d-array/"
+}
