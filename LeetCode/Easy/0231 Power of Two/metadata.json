@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool isPowerOfTwo(int n) {\n        if(n<=0){\n            return false;\n        }\n        while(n%2==0){\n            n=n/2;\n        }\n        return n==1;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Power of Two",
+  "problemNumber": "231",
+  "submissionDate": "2026-09-01T03:55:37.038Z",
+  "submissionUrl": "https://leetcode.com/problems/power-of-two/"
+}
