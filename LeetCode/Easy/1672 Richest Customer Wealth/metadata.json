@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int maximumWealth(vector<vector<int>>& accounts) {\n        vector<int> v;\n\n        for(int i=0;i<accounts.size();i++){\n            int sum=0;\n            for(int j=0;j<accounts[i].size();j++){\n                sum=sum+accounts[i][j];\n            }\n            v.push_back(sum);\n        }\n        sort(v.begin(),v.end());\n        return v[v.size()-1];\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Richest Customer Wealth",
+  "problemNumber": "1672",
+  "submissionDate": "2026-09-02T05:38:18.271Z",
+  "submissionUrl": "https://leetcode.com/problems/richest-customer-wealth/"
+}
