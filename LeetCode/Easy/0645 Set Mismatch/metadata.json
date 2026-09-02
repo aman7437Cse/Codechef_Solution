@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> findErrorNums(vector<int>& nums) {\n        vector<int> v;\n        sort(nums.begin(),nums.end());\n        for(int i=0;i<nums.size()-1;i++){\n            if(nums[i]==nums[i+1]){\n                v.push_back(nums[i]);\n                v.push_back(nums[i]+1);\n            }\n        }\n        return v;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Set Mismatch",
+  "problemNumber": "645",
+  "submissionDate": "2026-09-02T05:24:58.431Z",
+  "submissionUrl": "https://leetcode.com/problems/set-mismatch/submissions/2128015756/"
+}
