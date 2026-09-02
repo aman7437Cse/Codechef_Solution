@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool uniformArray(vector<int>& nums1) {\n        return true;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Construct Uniform Parity Array I",
+  "problemNumber": "3875",
+  "submissionDate": "2026-09-02T05:02:38.228Z",
+  "submissionUrl": "https://leetcode.com/problems/construct-uniform-parity-array-i/submissions/2127992196/"
+}
