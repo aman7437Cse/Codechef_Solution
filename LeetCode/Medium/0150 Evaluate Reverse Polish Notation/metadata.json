@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int evalRPN(vector<string>& tokens) {\n        stack<int> st;\n        for(string token:tokens){\n\n            \n\n            if(token==\"+\"||token==\"*\"||token==\"-\"||token==\"/\"){\n                int a=st.top();\n                st.pop();\n\n                int b=st.top();\n                st.pop();\n\n                if(token==\"+\"){\n                    st.push(a+b);\n                }\n                if(token==\"-\"){\n                    st.push(b-a);\n                }\n                if(token==\"*\"){\n                    st.push(a*b);\n                }\n                if(token==\"/\"){\n                    st.push(b/a);\n                }\n                \n\n            }\n            else{\n                    st.push(stoi(token));\n                }\n        }\n        return st.top();\n        \n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Evaluate Reverse Polish Notation",
+  "problemNumber": "150",
+  "submissionDate": "2026-09-02T04:51:48.026Z",
+  "submissionUrl": "https://leetcode.com/problems/evaluate-reverse-polish-notation/submissions/2127980663/"
+}
