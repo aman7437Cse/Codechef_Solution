@@ -7,11 +7,12 @@ bool prime(int n){
         if(n%i==0){
             count++;
         }
-        if(count==2){
-            return true;
-        }
+        
+        
         
     }
+    if(count==2){
+            return true;
     return false;
 }
     long long splitArray(vector<int>& nums) {
