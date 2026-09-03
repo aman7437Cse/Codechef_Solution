@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n\n    bool prime(int n){\n    int count=0;\n    for(int i=1;i<=n;i++){\n        if(n%i==0){\n            count++;\n        }\n    }\n    if(count==2){\n            return true;\n    }\n    return false;\n    }\n    long long splitArray(vector<int>& nums) {\n        \n        \n        long long s1=0;\n        long long s2=0;\n        \n        for(int i=0;i<nums.size();i++){\n            if(prime(i)){\n                s1+=nums[i];\n            }\n            else{\n                s2+=nums[i];\n            }\n            \n        }\n        \n       \n\n        return abs(s1-s2);;\n\n        \n    }\n};",
+  "code": "class Solution {\npublic:\n\n    bool prime(int n){\n        if(n < 2) return false;\n\n        for(int i = 2; i*i <= n; i++){\n            if(n % i == 0){\n                return false;\n            }\n        }\n\n        return true;\n    }\n\n    long long splitArray(vector<int>& nums) {\n\n        long long s1 = 0;\n        long long s2 = 0;\n\n        for(int i = 0; i < nums.size(); i++){\n\n            if(prime(i)){\n                s1 += nums[i];\n            }\n            else{\n                s2 += nums[i];\n            }\n        }\n\n        return abs(s1 - s2);\n    }\n};",
   "difficulty": "Medium",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Split Array by Prime Indices",
   "problemNumber": "3618",
-  "submissionDate": "2026-09-03T04:26:48.202Z",
-  "submissionUrl": "https://leetcode.com/problems/split-array-by-prime-indices/?envType=problem-list-v2&envId=math"
+  "submissionDate": "2026-09-03T04:28:16.070Z",
+  "submissionUrl": "https://leetcode.com/problems/split-array-by-prime-indices/submissions/2129158495/?envType=problem-list-v2&envId=math"
 }
