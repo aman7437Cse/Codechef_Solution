@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        int count=0;\n        for(int i=0;i<s.size();i++){\n            if(s[i]=='('){\n                count++;\n            }\n            else if(s[i]==')'){\n                count--;\n            }\n        }\n        return abs(count);\n        \n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Minimum Add to Make Parentheses Valid",
+  "problemNumber": "921",
+  "submissionDate": "2026-09-04T09:11:39.172Z",
+  "submissionUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/submissions/2130515974/"
+}
