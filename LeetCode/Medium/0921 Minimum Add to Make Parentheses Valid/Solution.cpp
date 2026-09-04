@@ -1,13 +1,13 @@
 class Solution {
 public:
     int minAddToMakeValid(string s) {
-        int count=0;
-        int sum=0;
+        
+        stack<int> s;
         for(int i=0;i<s.size();i++){
             if(s[i]=='('){
-                count++;
+                s.push()
             }
-            else (){
+            else{
                 sum++;
             }
         }
