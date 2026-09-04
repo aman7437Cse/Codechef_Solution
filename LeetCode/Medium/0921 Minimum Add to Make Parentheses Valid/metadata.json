@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        \n        stack<int> s;\n        int count;\n        for(int i=0;i<s.size();i++){\n            if(s[i]=='('){\n                s.push(s[i]);\n            }\n            else if(s[i]==')'&& s.top()=='('{\n               s.pop();\n            }\n            else{\n                count++;\n            }\n        }\n        return abs(sum-count);\n        \n    }\n};",
+  "code": "class Solution {\npublic:\n    int minAddToMakeValid(string s) {\n        \n        stack<char> st;\n        int count=0;\n        for(int i=0;i<s.size();i++){\n            if(s[i]=='('){\n                st.push(s[i]);\n            }\n            else {\n               if(st.empty()){\n                count++;\n               }\n               else{\n                st.pop();\n               }\n\n            }\n            \n        }\n        return (count+st.size());\n        \n    }\n};",
   "difficulty": "Medium",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Minimum Add to Make Parentheses Valid",
   "problemNumber": "921",
-  "submissionDate": "2026-09-04T09:25:12.082Z",
-  "submissionUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+  "submissionDate": "2026-09-04T12:50:47.654Z",
+  "submissionUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/submissions/2130701263/"
 }
