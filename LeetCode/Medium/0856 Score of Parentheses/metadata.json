@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int scoreOfParentheses(string s) {\n        stack<char> st;\n        for(char a:s){\n            if(a=='('){\n                st.push(a);\n\n            }\n        }\n        return st.size();\n    }\n};",
+  "difficulty": "Medium",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Score of Parentheses",
+  "problemNumber": "856",
+  "submissionDate": "2026-09-04T15:42:00.711Z",
+  "submissionUrl": "https://leetcode.com/problems/score-of-parentheses/description/"
+}
