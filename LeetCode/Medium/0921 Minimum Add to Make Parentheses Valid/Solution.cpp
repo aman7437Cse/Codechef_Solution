@@ -7,8 +7,8 @@ public:
             if(s[i]=='('){
                 s.push(s[i]);
             }
-            else if(s[i]==')'&&{
-                sum++;
+            else if(s[i]==')'&& s.top()=='('{
+               s.pop()
             }
         }
         return abs(sum-count);
