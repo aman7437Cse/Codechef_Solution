@@ -5,9 +5,9 @@ public:
         stack<int> s;
         for(int i=0;i<s.size();i++){
             if(s[i]=='('){
-                s.push()
+                s.push(s[i]);
             }
-            else{
+            else if(s[i]==')'&&{
                 sum++;
             }
         }
