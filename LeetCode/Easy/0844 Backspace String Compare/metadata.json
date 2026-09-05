@@ -1,10 +1,10 @@
 {
-  "code": "        }\n            else{\n                st.push(a);\n            }\n        for(char b:t){\n            if(b=='#'){\n                bt.pop();\n            }\n            else{\n                if(!bt.empty())\n                bt.push(b);\n            }\n        }\n        return st==bt;\n        \n    }\n};\n            }\n                st.pop();\n                if(!st.empty())\n            if(a=='#'){\n",
+  "code": "class Solution {\npublic:\n    bool backspaceCompare(string s, string t) {\n        stack<char>st;\n        stack<char>bt;\n        for(char a:s){\n            if(a=='#'){\n                if(!st.empty())\n                st.pop();\n            }\n            else{\n                st.push(a);\n            }\n        }\n        for(char b:t){\n            if(b=='#'){\n                if(!bt.empty())\n                bt.pop();\n            }\n            else{\n                bt.push(b);\n            }\n        }\n        return st==bt;\n        \n    }\n};",
   "difficulty": "Easy",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Backspace String Compare",
   "problemNumber": "844",
-  "submissionDate": "2026-09-04T15:35:13.783Z",
-  "submissionUrl": "https://leetcode.com/problems/backspace-string-compare/submissions/2130853611/"
+  "submissionDate": "2026-09-05T15:10:50.708Z",
+  "submissionUrl": "https://leetcode.com/problems/backspace-string-compare/submissions/2131847451/"
 }
