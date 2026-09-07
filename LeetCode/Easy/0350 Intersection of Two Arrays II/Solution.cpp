@@ -6,7 +6,12 @@ public:
         for(int x:nums1){
             mp[x]++;
         }
-        for(i)
+        for(int x:nums2){
+            if(mp[x]>1){
+                v.push_back(x);
+                mp[x]--;
+            }
+        }
         
         
         return v;
