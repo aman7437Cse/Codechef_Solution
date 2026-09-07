@@ -7,7 +7,7 @@ public:
             mp[x]++;
         }
         for(int x:nums2){
-            if(mp[x]>1){
+            if(mp[x]>0){
                 v.push_back(x);
                 mp[x]--;
             }
