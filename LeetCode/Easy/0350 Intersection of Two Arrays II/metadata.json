@@ -1,10 +1,10 @@
 {
-  "code": "class Solution {\npublic:\n    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {\n        vector<int> v;\n        for(int i=0;i<nums1.size();i++){\n            for(int j=0;j<nums2.size();j++){\n                if(nums1[i]==nums2[j]){\n                    v.push_back(nums1[i]);\n                    break;\n                }\n            }\n        }\n        sort(v.begin(),v.end());\n        \n        return v;\n    }\n};",
+  "code": "class Solution {\npublic:\n    vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {\n        vector<int> v;\n        map<int,int> mp;\n        for(int x:nums1){\n            mp[x]++;\n        }\n        for(i)\n        \n        \n        return v;\n    }\n};",
   "difficulty": "Easy",
   "language": "c++",
   "platform": "LeetCode",
   "problemName": "Intersection of Two Arrays II",
   "problemNumber": "350",
-  "submissionDate": "2026-09-07T04:52:10.829Z",
-  "submissionUrl": "https://leetcode.com/problems/intersection-of-two-arrays-ii/submissions/2133477793/"
+  "submissionDate": "2026-09-07T04:58:49.079Z",
+  "submissionUrl": "https://leetcode.com/problems/intersection-of-two-arrays-ii/"
 }
