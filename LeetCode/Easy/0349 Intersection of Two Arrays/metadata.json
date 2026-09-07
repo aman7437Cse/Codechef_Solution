@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {\n        vector<int> v;\n        for(int i=0;i<nums1.size();i++){\n            for(int j=0;j<nums2.size();j++){\n                if(nums1[i]==nums2[j]){\n                    v.push_back(nums2[j]);\n                }\n            }\n        }\n        sort(v.begin(),v.end());\n        v.erase(unique(v.begin(),v.end()),v.end());\n        return v;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Intersection of Two Arrays",
+  "problemNumber": "349",
+  "submissionDate": "2026-09-07T04:48:31.368Z",
+  "submissionUrl": "https://leetcode.com/problems/intersection-of-two-arrays/"
+}
