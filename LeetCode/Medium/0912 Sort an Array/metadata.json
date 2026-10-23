@@ -1,0 +1,10 @@
+{
+  "code": "void merge(vector<int>& nums,int left,int mid,int right){\n    vector<int>temp;\n    int i=left;\n    int j=mid+1;\n    while(i<=mid && j<=right){\n        if(nums[i]<=nums[j]){\n            temp.push_back(nums[i]);\n            i++;\n        }\n        else{\n            temp.push_back(nums[j]);\n            j++;\n        }\n    }\n    while(i<=mid){\n        temp.push_back(nums[i]);\n            i++;\n    }\n    while(j<=right){\n        temp.push_back(nums[j]);\n            j++;\n    }\n    for(int k=left;k<=right;k++){\n        nums[k]=temp[k-left];\n    }\n}\nvoid merge_sort(vector<int>& nums,int left,int right){\n    if(left>=right){\n        return;\n    }\n    int mid=left+(right-left)/2;\n    merge_sort(nums,left,mid);\n    merge_sort(nums,mid+1,right);\n    merge(nums,left,mid,right);\n}\n\n\nclass Solution {\npublic:\n    vector<int> sortArray(vector<int>& nums) {\n        merge_sort(nums,0,nums.size()-1);\n        return nums;\n        \n    }\n};",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Sort an Array",
+  "problemNumber": "912",
+  "submissionDate": "2026-10-23T16:35:31.822Z",
+  "submissionUrl": "https://leetcode.com/problems/sort-list/description/?envType=problem-list-v2&envId=merge-sort"
+}
