@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int numberOfEmployeesWhoMetTarget(vector<int>& hours, int target) {\n        int count=0;\n        for(int i=0;i<hours.size();i++){\n            if(hours[i]>=target){\n                count++;\n            }\n        }\n        return count;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Number of Employees Who Met the Target",
+  "problemNumber": "2798",
+  "submissionDate": "2026-10-23T16:42:54.318Z",
+  "submissionUrl": "https://leetcode.com/problems/number-of-employees-who-met-the-target/submissions/2179834910/"
+}
