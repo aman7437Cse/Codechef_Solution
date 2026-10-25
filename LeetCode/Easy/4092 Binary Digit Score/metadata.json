@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int calculateScore(int a, int b) {\n        int s1=0;\n        int s2=0;\n        while(a>0){\n            s1+=a%2;\n            a=a/2;\n        }\n        while(b>0){\n            s2+=b%2;\n            b=b/2;\n        }\n        if(s1>=s2){\n            return s1*s2;\n        }\n        return s2/s1;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Binary Digit Score",
+  "problemNumber": "4092",
+  "submissionDate": "2026-10-25T13:07:40.933Z",
+  "submissionUrl": "https://leetcode.com/problems/binary-digit-score/submissions/2181399055/"
+}
