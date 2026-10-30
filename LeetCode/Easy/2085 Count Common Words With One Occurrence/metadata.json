@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int countWords(vector<string>& words1, vector<string>& words2) {\n        map<string,int> mp1,mp2;\n        for(string a: words1){\n            mp1[a]++;\n        }\n        for(string a:words2){\n            mp2[a]++;\n        }\n        int count=0;\n        for(string a:words1){\n            if(mp1[a]==1 && mp2[a]==1){\n                count++;\n                mp1[a]=0;\n            }\n        }\n        return count;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count Common Words With One Occurrence",
+  "problemNumber": "2085",
+  "submissionDate": "2026-10-30T06:57:08.149Z",
+  "submissionUrl": "https://leetcode.com/problems/count-common-words-with-one-occurrence/submissions/2185302982/"
+}
