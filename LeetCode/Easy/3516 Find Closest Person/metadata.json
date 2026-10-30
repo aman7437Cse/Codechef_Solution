@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int findClosest(int x, int y, int z) {\n        int i=abs(z-x);\n        int j=abs(z-y);\n        if(j>i){\n            return 1;\n        }\n        if(i>j){\n            return 2;\n        }\n        return 0;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Find Closest Person",
+  "problemNumber": "3516",
+  "submissionDate": "2026-10-30T09:58:35.083Z",
+  "submissionUrl": "https://leetcode.com/problems/find-closest-person/submissions/2185402974/"
+}
