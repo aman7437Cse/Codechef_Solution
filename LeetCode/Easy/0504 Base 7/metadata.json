@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    string convertToBase7(int num) {\n        if(num==0){\n            return \"0\";\n        }\n        string ans=\"\";\n        int n=abs(num);\n        while(n>0){\n            int r=n%7;\n            ans=to_string(r)+ans;\n            n=n/7;\n        }\n        if(num<0){\n            ans=\"-\"+ans;\n        }\n        return ans;\n\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Base 7",
+  "problemNumber": "504",
+  "submissionDate": "2026-11-07T06:16:08.630Z",
+  "submissionUrl": "https://leetcode.com/problems/base-7/submissions/2191104450/"
+}
