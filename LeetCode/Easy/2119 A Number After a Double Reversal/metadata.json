@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    bool isSameAfterReversals(int num) {\n        int r1=0;\n        int r2=0;\n        int a=num;\n        \n        while(a>0){\n            int r=a%10;\n            r1=r1*10+r;\n            a=a/10;\n        }\n        int t=r1;\n        while(t>0){\n            int s=t%10;\n            r2=r2*10+s;\n            t=t/10;\n        }\n        return r2==num;\n    \n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "A Number After a Double Reversal",
+  "problemNumber": "2119",
+  "submissionDate": "2026-11-07T07:39:56.248Z",
+  "submissionUrl": "https://leetcode.com/problems/a-number-after-a-double-reversal/submissions/2191143095/"
+}
