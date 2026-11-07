@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int arrangeCoins(int n) {\n        int count =0;\n        int i=1;\n        while(n>=i){\n            n=n-i;\n            count++;\n            i++;\n\n        }\n        return count;\n\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Arranging Coins",
+  "problemNumber": "441",
+  "submissionDate": "2026-11-07T05:59:48.412Z",
+  "submissionUrl": "https://leetcode.com/problems/arranging-coins/submissions/2191096857/"
+}
