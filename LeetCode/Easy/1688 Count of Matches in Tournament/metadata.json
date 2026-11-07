@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int numberOfMatches(int n) {\n        int count=0;\n        while(n>1){\n            count+=n/2;\n            n=(n+1)/2;\n        }\n        return count;\n        \n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Count of Matches in Tournament",
+  "problemNumber": "1688",
+  "submissionDate": "2026-11-07T07:30:43.016Z",
+  "submissionUrl": "https://leetcode.com/problems/count-of-matches-in-tournament/submissions/2191139018/"
+}
