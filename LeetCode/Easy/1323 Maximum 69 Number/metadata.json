@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    int maximum69Number (int num) {\n        string s=to_string(num);\n        for(int i=0;i<s.size();i++){\n            if(s[i]=='6'){\n                s[i]='9';\n                break;\n            }\n        }\n        return stoi(s);\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Maximum 69 Number",
+  "problemNumber": "1323",
+  "submissionDate": "2026-11-07T06:50:51.962Z",
+  "submissionUrl": "https://leetcode.com/problems/maximum-69-number/submissions/2191120816/"
+}
