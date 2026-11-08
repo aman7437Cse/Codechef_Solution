@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    string toLowerCase(string s) {\n        for(int i=0;i<s.size();i++){\n            if(s[i]>='A' && s[i]<='Z'){\n                s[i]+=32;\n            }\n        }\n        return s;\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "To Lower Case",
+  "problemNumber": "709",
+  "submissionDate": "2026-11-08T10:03:05.912Z",
+  "submissionUrl": "https://leetcode.com/problems/to-lower-case/?envType=problem-list-v2&envId=string"
+}
