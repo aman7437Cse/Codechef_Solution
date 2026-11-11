@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\npublic:\n    string largestOddNumber(string num) {\n        for(int i=num.size();i>=0;i--){\n            if((num[i]-'0')%2!=0){\n                return num.substr(0,i+1);\n            }\n        }\n        return \"\";\n    }\n};",
+  "difficulty": "Easy",
+  "language": "c++",
+  "platform": "LeetCode",
+  "problemName": "Largest Odd Number in String",
+  "problemNumber": "1903",
+  "submissionDate": "2026-11-11T05:24:32.039Z",
+  "submissionUrl": "https://leetcode.com/problems/largest-odd-number-in-string/submissions/2193629129/"
+}
